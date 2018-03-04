@@ -1,0 +1,61 @@
+<odoo>
+  <data>
+    <!-- Menambahkan field manual number di form po -->
+    <record id="purchase.purchase_order_form_manual_number" model="ir.ui.view">
+          <field name="name">purchase.purchase_order_form_manual_number</field>
+          <field name="model">purchase.order</field>
+          <field name="inherit_id" ref="purchase.purchase_order_form"/>
+          <field name="type">form</field>
+          <field name="arch" type="xml">
+              <field name="name" position="after">
+                <br/>
+                <field name="manual_number"/>
+              </field>
+          </field>
+      </record>
+
+    <!-- Menambahkan field manual number di form incoming product -->
+    <record id="stock.view_picking_form_manual_number" model="ir.ui.view">
+          <field name="name">stock.view_picking_form_manual_number</field>
+          <field name="model">stock.picking</field>
+          <field name="inherit_id" ref="stock.view_picking_form"/>
+          <field name="type">form</field>
+          <field name="arch" type="xml">
+              <field name="name" position="after">
+                <br/>
+                <field name="manual_number"/>
+              </field>
+          </field>
+      </record>
+
+    <!-- Menambahkan field manual number di form so -->
+    <record id="sale.view_order_form_manual_number" model="ir.ui.view">
+          <field name="name">sale.view_order_form_manual_number</field>
+          <field name="model">sale.order</field>
+          <field name="inherit_id" ref="sale.view_order_form"/>
+          <field name="type">form</field>
+          <field name="arch" type="xml">
+              <field name="name" position="after">
+                <br/>
+                <field name="manual_number"/>
+              </field>
+          </field>
+      </record>
+
+    <!-- Menambahkan field manual number di form inv -->
+    <record id="account.invoice_form_manual_number" model="ir.ui.view">
+          <field name="name">account.invoice_form_manual_number</field>
+          <field name="model">account.invoice</field>
+          <field name="inherit_id" ref="account.invoice_form"/>
+          <field name="type">form</field>
+          <field name="arch" type="xml">
+              <field name="number" position="after">
+                <br/>
+                <field name="manual_number"/>
+              </field>
+          </field>
+      </record>
+
+
+  </data>
+</odoo>
