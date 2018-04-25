@@ -14,7 +14,7 @@
     'author': "Kode Kite",
     'website': "http://www.onespt.blogspot.com",
     'images': ['static/description/images/gambar.jpg'],
-    'price':'20',
+    'price':'5',
     'currency':'EUR',
     'license':'OPL-1',
 
