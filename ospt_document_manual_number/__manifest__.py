@@ -17,8 +17,8 @@
     'author': "Kode Kite",
     'website': "http://www.onespt.blogspot.com",
     'images': ['static/description/images/gambar1.jpg'],
-    'price':'5',
-    'currency':'EUR',
+    #'price':'5',
+    #'currency':'EUR',
     'license':'OPL-1',
 
     # Categories can be used to filter modules in modules listing
